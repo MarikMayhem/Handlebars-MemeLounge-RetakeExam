@@ -1,0 +1,23 @@
+{{>navigation}}
+<div id="edit-meme">
+    <form action="#/edit/meme" method="post">
+    <h1>Edit Meme</h1>
+        <div class="container">
+            <p>Please fill in this form to edit an meme.</p>
+            <input type="hidden" name="memeId" value="{{meme._id}}" />
+
+            <p>Title</p>
+            <input type="text" placeholder="Enter Title" name="title" value="{{title}}">
+
+            <p>Description</p>
+            <input type="text" placeholder="Enter Description" name="description" value="{{description}}">
+
+            <p>Meme Image</p>
+            <input type="text" placeholder="Enter Meme ImageUrl" name="imageUrl" value="{{imageUrl}}">
+
+            <button type="submit" class="registerbtn">Edit Meme</button>
+        </div>
+    </form>
+</div>
+
+{{>footer}}
